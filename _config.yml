@@ -1,9 +1,9 @@
-title: Streamdata Gallery
-url: google-cloud-resource-manager.api.streamdata.gallery
+title: Streamdata Gallery Google Cloud Resource Manager
+url: google-cloud-resource-manager.streamdata.gallery
 tag: Google Cloud Resource Manager
 markdown: kramdown
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", ".DS_Store"]
-github_user: streamdata-gallery-organizations
+github_user: streamdata-gallery
 github_repo: google-cloud-resource-manager
 github_branch: master
 collections:
