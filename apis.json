@@ -1,0 +1,33 @@
+{
+	"name": "Streadata.io API Gallery - Google Cloud Resource Manager",
+	"description": "This is a repository of google cloud resource manager APIs, self-contained as a Github repository, with HTML and YAML representations of the APIs and their surrounding operations.",
+	"image": "http://template.streamdata.gallery/assets/google-cloud-resource-manager.png",
+	"created": "2018-02-24",
+	"modified": "2018-08-30",
+	"url": "http://google-cloud-resource-manager.streamdata.gallery/apis.json",
+	"specificationVersion": "0.14",
+	"apis": [
+		{
+			"name": "Google Cloud Resource Manager",
+			"x-api-slug": "google-cloud-resource-manager",
+			"description": "Google Cloud Platform provides resource containers such as Organizations and Projects, that allow you to group and hierarchically organize other Cloud Platform resources. This hierarchical organization lets you easily manage common aspects of your resources such as access control and configuration settings. The Google Cloud Resource Manager service enables you to programmatically manage these resource containers.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Generic-GCP.png",
+			"humanURL": "https://cloud.google.com/resource-manager/",
+			"baseURL": "://cloudresourcemanager.googleapis.com//",
+			"tags": "Google Cloud Resource Manager",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-organizations/google-cloud-resource-manager/master/_listings/google-cloud-resource-manager/openapi.md"
+				}
+			]
+		}
+	],
+	"tags": "Google Cloud Resource Manager",
+	"include": [
+		{
+			"name": "Google Cloud Resource Manager",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-organizations/google-cloud-resource-manager/master/_listings/google-cloud-resource-manager/apis.yaml"
+		}
+	]
+}

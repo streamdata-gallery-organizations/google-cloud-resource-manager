@@ -11,13 +11,13 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "9"
 x-alexaRank: "0"
 tags: Google Cloud Resource Manager
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-30"
+modified: "2018-08-30"
 url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-cloud-resource-manager/master/_listings/google-cloud-resource-manager/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Google Cloud Resource Manager API List Liens
-  x-api-slug: google-cloud-resource-manager-api
+- name: Google Cloud Resource Manager - List Liens
+  x-api-slug: v1liens-get
   description: |-
     List all Liens applied to the `parent` resource.
 
@@ -26,15 +26,16 @@ apis:
     `resourcemanager.projects.get`.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Generic-GCP.png
   humanURL: https://cloud.google.com/resource-manager/
-  baseURL: ://cloudresourcemanager.googleapis.com////v1/liens
-  tags: Lien
+  baseURL: ://cloudresourcemanager.googleapis.com//
+  tags: Orchestration, Google APIs, Management, Stack Network, API Service Provider,
+    API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-cloud-resource-manager/master/_listings/google-cloud-resource-manager/v1liens-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-cloud-resource-manager/master/_listings/google-cloud-resource-manager/v1liens-get-openapi.md
-- name: Google Cloud Resource Manager API Create Lien
-  x-api-slug: google-cloud-resource-manager-api
+- name: Google Cloud Resource Manager - Create Lien
+  x-api-slug: v1liens-post
   description: |-
     Create a Lien which applies to the resource denoted by the `parent` field.
 
@@ -45,13 +46,14 @@ apis:
     NOTE: Some resources may limit the number of Liens which may be applied.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Generic-GCP.png
   humanURL: https://cloud.google.com/resource-manager/
-  baseURL: ://cloudresourcemanager.googleapis.com////v1/liens
-  tags: Lien
+  baseURL: ://cloudresourcemanager.googleapis.com//
+  tags: Orchestration, Google APIs, Management, Stack Network, API Service Provider,
+    API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-cloud-resource-manager/master/_listings/google-cloud-resource-manager/v1liens-post-openapi.md
-- name: Google Cloud Resource Manager API Search Organization
-  x-api-slug: google-cloud-resource-manager-api
+- name: Google Cloud Resource Manager - Search Organization
+  x-api-slug: v1organizationssearch-post
   description: |-
     Searches Organization resources that are visible to the user and satisfy
     the specified filter. This method returns Organizations in an unspecified
@@ -59,26 +61,28 @@ apis:
     results.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Generic-GCP.png
   humanURL: https://cloud.google.com/resource-manager/
-  baseURL: ://cloudresourcemanager.googleapis.com////v1/organizations:search
-  tags: Organization
+  baseURL: ://cloudresourcemanager.googleapis.com//
+  tags: Orchestration, Google APIs, Management, Stack Network, API Service Provider,
+    API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-cloud-resource-manager/master/_listings/google-cloud-resource-manager/v1organizationssearch-post-openapi.md
-- name: Google Cloud Resource Manager API List Projects
-  x-api-slug: google-cloud-resource-manager-api
+- name: Google Cloud Resource Manager - List Projects
+  x-api-slug: v1projects-get
   description: |-
     Lists Projects that are visible to the user and satisfy the
     specified filter. This method returns Projects in an unspecified order.
     New Projects do not necessarily appear at the end of the list.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Generic-GCP.png
   humanURL: https://cloud.google.com/resource-manager/
-  baseURL: ://cloudresourcemanager.googleapis.com////v1/projects
-  tags: Project
+  baseURL: ://cloudresourcemanager.googleapis.com//
+  tags: Orchestration, Google APIs, Management, Stack Network, API Service Provider,
+    API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-cloud-resource-manager/master/_listings/google-cloud-resource-manager/v1projects-get-openapi.md
-- name: Google Cloud Resource Manager API Create Project
-  x-api-slug: google-cloud-resource-manager-api
+- name: Google Cloud Resource Manager - Create Project
+  x-api-slug: v1projects-post
   description: |-
     Request that a new Project be created. The result is an Operation which
     can be used to track the creation process. It is automatically deleted
@@ -90,13 +94,14 @@ apis:
     polling at the 5th second with an exponential backoff.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Generic-GCP.png
   humanURL: https://cloud.google.com/resource-manager/
-  baseURL: ://cloudresourcemanager.googleapis.com////v1/projects
-  tags: Project
+  baseURL: ://cloudresourcemanager.googleapis.com//
+  tags: Orchestration, Google APIs, Management, Stack Network, API Service Provider,
+    API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-cloud-resource-manager/master/_listings/google-cloud-resource-manager/v1projects-post-openapi.md
-- name: Google Cloud Resource Manager API Delete Project
-  x-api-slug: google-cloud-resource-manager-api
+- name: Google Cloud Resource Manager - Delete Project
+  x-api-slug: v1projectsprojectid-delete
   description: |-
     Marks the Project identified by the specified
     `project_id` (for example, `my-project-123`) for deletion.
@@ -124,13 +129,14 @@ apis:
     The caller must have modify permissions for this Project.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Generic-GCP.png
   humanURL: https://cloud.google.com/resource-manager/
-  baseURL: ://cloudresourcemanager.googleapis.com////v1/projects/{projectId}
-  tags: Project
+  baseURL: ://cloudresourcemanager.googleapis.com//
+  tags: Orchestration, Google APIs, Management, Stack Network, API Service Provider,
+    API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-cloud-resource-manager/master/_listings/google-cloud-resource-manager/v1projectsprojectid-delete-openapi.md
-- name: Google Cloud Resource Manager API Get Project
-  x-api-slug: google-cloud-resource-manager-api
+- name: Google Cloud Resource Manager - Get Project
+  x-api-slug: v1projectsprojectid-get
   description: |-
     Retrieves the Project identified by the specified
     `project_id` (for example, `my-project-123`).
@@ -138,13 +144,14 @@ apis:
     The caller must have read permissions for this Project.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Generic-GCP.png
   humanURL: https://cloud.google.com/resource-manager/
-  baseURL: ://cloudresourcemanager.googleapis.com////v1/projects/{projectId}
-  tags: Project
+  baseURL: ://cloudresourcemanager.googleapis.com//
+  tags: Orchestration, Google APIs, Management, Stack Network, API Service Provider,
+    API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-cloud-resource-manager/master/_listings/google-cloud-resource-manager/v1projectsprojectid-get-openapi.md
-- name: Google Cloud Resource Manager API Update Project
-  x-api-slug: google-cloud-resource-manager-api
+- name: Google Cloud Resource Manager - Update Project
+  x-api-slug: v1projectsprojectid-put
   description: |-
     Updates the attributes of the Project identified by the specified
     `project_id` (for example, `my-project-123`).
@@ -152,13 +159,14 @@ apis:
     The caller must have modify permissions for this Project.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Generic-GCP.png
   humanURL: https://cloud.google.com/resource-manager/
-  baseURL: ://cloudresourcemanager.googleapis.com////v1/projects/{projectId}
-  tags: Project
+  baseURL: ://cloudresourcemanager.googleapis.com//
+  tags: Orchestration, Google APIs, Management, Stack Network, API Service Provider,
+    API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-cloud-resource-manager/master/_listings/google-cloud-resource-manager/v1projectsprojectid-put-openapi.md
-- name: Google Cloud Resource Manager API Get Project Ancestry
-  x-api-slug: google-cloud-resource-manager-api
+- name: Google Cloud Resource Manager - Get Project Ancestry
+  x-api-slug: v1projectsprojectidgetancestry-post
   description: |-
     Gets a list of ancestors in the resource hierarchy for the Project
     identified by the specified `project_id` (for example, `my-project-123`).
@@ -166,13 +174,14 @@ apis:
     The caller must have read permissions for this Project.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Generic-GCP.png
   humanURL: https://cloud.google.com/resource-manager/
-  baseURL: ://cloudresourcemanager.googleapis.com////v1/projects/{projectId}:getAncestry
-  tags: Project
+  baseURL: ://cloudresourcemanager.googleapis.com//
+  tags: Orchestration, Google APIs, Management, Stack Network, API Service Provider,
+    API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-cloud-resource-manager/master/_listings/google-cloud-resource-manager/v1projectsprojectidgetancestry-post-openapi.md
-- name: Google Cloud Resource Manager API Restore Project
-  x-api-slug: google-cloud-resource-manager-api
+- name: Google Cloud Resource Manager - Restore Project
+  x-api-slug: v1projectsprojectidundelete-post
   description: |-
     Restores the Project identified by the specified
     `project_id` (for example, `my-project-123`).
@@ -183,25 +192,27 @@ apis:
     The caller must have modify permissions for this Project.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Generic-GCP.png
   humanURL: https://cloud.google.com/resource-manager/
-  baseURL: ://cloudresourcemanager.googleapis.com////v1/projects/{projectId}:undelete
-  tags: Project
+  baseURL: ://cloudresourcemanager.googleapis.com//
+  tags: Orchestration, Google APIs, Management, Stack Network, API Service Provider,
+    API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-cloud-resource-manager/master/_listings/google-cloud-resource-manager/v1projectsprojectidundelete-post-openapi.md
-- name: Google Cloud Resource Manager API Get IAM Policy
-  x-api-slug: google-cloud-resource-manager-api
+- name: Google Cloud Resource Manager - Get IAM Policy
+  x-api-slug: v1projectsresourcegetiampolicy-post
   description: |-
     Returns the IAM access control policy for the specified Project.
     Permission is denied if the policy or the resource does not exist.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Generic-GCP.png
   humanURL: https://cloud.google.com/resource-manager/
-  baseURL: ://cloudresourcemanager.googleapis.com////v1/projects/{resource}:getIamPolicy
-  tags: IAM
+  baseURL: ://cloudresourcemanager.googleapis.com//
+  tags: Orchestration, Google APIs, Management, Stack Network, API Service Provider,
+    API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-cloud-resource-manager/master/_listings/google-cloud-resource-manager/v1projectsresourcegetiampolicy-post-openapi.md
-- name: Google Cloud Resource Manager API Set IAM Policy
-  x-api-slug: google-cloud-resource-manager-api
+- name: Google Cloud Resource Manager - Set IAM Policy
+  x-api-slug: v1projectsresourcesetiampolicy-post
   description: |-
     Sets the IAM access control policy for the specified Project. Replaces
     any existing policy.
@@ -243,23 +254,25 @@ apis:
     roles.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Generic-GCP.png
   humanURL: https://cloud.google.com/resource-manager/
-  baseURL: ://cloudresourcemanager.googleapis.com////v1/projects/{resource}:setIamPolicy
-  tags: IAM
+  baseURL: ://cloudresourcemanager.googleapis.com//
+  tags: Orchestration, Google APIs, Management, Stack Network, API Service Provider,
+    API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-cloud-resource-manager/master/_listings/google-cloud-resource-manager/v1projectsresourcesetiampolicy-post-openapi.md
-- name: Google Cloud Resource Manager API Test IAM Policy
-  x-api-slug: google-cloud-resource-manager-api
+- name: Google Cloud Resource Manager - Test IAM Policy
+  x-api-slug: v1projectsresourcetestiampermissions-post
   description: Returns permissions that a caller has on the specified Project.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Generic-GCP.png
   humanURL: https://cloud.google.com/resource-manager/
-  baseURL: ://cloudresourcemanager.googleapis.com////v1/projects/{resource}:testIamPermissions
-  tags: IAM
+  baseURL: ://cloudresourcemanager.googleapis.com//
+  tags: Orchestration, Google APIs, Management, Stack Network, API Service Provider,
+    API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-cloud-resource-manager/master/_listings/google-cloud-resource-manager/v1projectsresourcetestiampermissions-post-openapi.md
-- name: Google Cloud Resource Manager API Delete Lien
-  x-api-slug: google-cloud-resource-manager-api
+- name: Google Cloud Resource Manager - Delete Lien
+  x-api-slug: v1name-delete
   description: |-
     Delete a Lien by `name`.
 
@@ -268,79 +281,73 @@ apis:
     `resourcemanager.projects.updateLiens`.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Generic-GCP.png
   humanURL: https://cloud.google.com/resource-manager/
-  baseURL: ://cloudresourcemanager.googleapis.com////v1/{name}
-  tags: Lien
+  baseURL: ://cloudresourcemanager.googleapis.com//
+  tags: Orchestration, Google APIs, Management, Stack Network, API Service Provider,
+    API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-cloud-resource-manager/master/_listings/google-cloud-resource-manager/v1name-delete-openapi.md
-- name: Google Cloud Resource Manager API Get Operation
-  x-api-slug: google-cloud-resource-manager-api
+- name: Google Cloud Resource Manager - Get Operation
+  x-api-slug: v1name-get
   description: |-
     Gets the latest state of a long-running operation.  Clients can use this
     method to poll the operation result at intervals as recommended by the API
     service.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Generic-GCP.png
   humanURL: https://cloud.google.com/resource-manager/
-  baseURL: ://cloudresourcemanager.googleapis.com////v1/{name}
-  tags: Operation
+  baseURL: ://cloudresourcemanager.googleapis.com//
+  tags: Orchestration, Google APIs, Management, Stack Network, API Service Provider,
+    API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-cloud-resource-manager/master/_listings/google-cloud-resource-manager/v1name-get-openapi.md
-- name: Google Cloud Resource Manager API Get Organization IAM Policy
-  x-api-slug: google-cloud-resource-manager-api
+- name: Google Cloud Resource Manager - Get Organization IAM Policy
+  x-api-slug: v1resourcegetiampolicy-post
   description: |-
     Gets the access control policy for an Organization resource. May be empty
     if no such policy or resource exists. The `resource` field should be the
     organization's resource name, e.g. "organizations/123".
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Generic-GCP.png
   humanURL: https://cloud.google.com/resource-manager/
-  baseURL: ://cloudresourcemanager.googleapis.com////v1/{resource}:getIamPolicy
-  tags: Organization
+  baseURL: ://cloudresourcemanager.googleapis.com//
+  tags: Orchestration, Google APIs, Management, Stack Network, API Service Provider,
+    API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-cloud-resource-manager/master/_listings/google-cloud-resource-manager/v1resourcegetiampolicy-post-openapi.md
-- name: Google Cloud Resource Manager API Set Organization IAM Policy
-  x-api-slug: google-cloud-resource-manager-api
+- name: Google Cloud Resource Manager - Set Organization IAM Policy
+  x-api-slug: v1resourcesetiampolicy-post
   description: |-
     Sets the access control policy on an Organization resource. Replaces any
     existing policy. The `resource` field should be the organization's resource
     name, e.g. "organizations/123".
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Generic-GCP.png
   humanURL: https://cloud.google.com/resource-manager/
-  baseURL: ://cloudresourcemanager.googleapis.com////v1/{resource}:setIamPolicy
-  tags: Organization
+  baseURL: ://cloudresourcemanager.googleapis.com//
+  tags: Orchestration, Google APIs, Management, Stack Network, API Service Provider,
+    API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-cloud-resource-manager/master/_listings/google-cloud-resource-manager/v1resourcesetiampolicy-post-openapi.md
-- name: Google Cloud Resource Manager API TEst Organization IAM Permissions
-  x-api-slug: google-cloud-resource-manager-api
+- name: Google Cloud Resource Manager - TEst Organization IAM Permissions
+  x-api-slug: v1resourcetestiampermissions-post
   description: |-
     Returns permissions that a caller has on the specified Organization.
     The `resource` field should be the organization's resource name,
     e.g. "organizations/123".
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Generic-GCP.png
   humanURL: https://cloud.google.com/resource-manager/
-  baseURL: ://cloudresourcemanager.googleapis.com////v1/{resource}:testIamPermissions
-  tags: Organization
+  baseURL: ://cloudresourcemanager.googleapis.com//
+  tags: Orchestration, Google APIs, Management, Stack Network, API Service Provider,
+    API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-cloud-resource-manager/master/_listings/google-cloud-resource-manager/v1resourcetestiampermissions-post-openapi.md
-- name: Google Cloud Resource Manager API
-  x-api-slug: google-cloud-resource-manager-api
-  description: Google Cloud Platform provides resource containers such as Organizations
-    and Projects, that allow you to group and hierarchically organize other Cloud
-    Platform resources. This hierarchical organization lets you easily manage common
-    aspects of your resources such as access control and configuration settings. The
-    Google Cloud Resource Manager service enables you to programmatically manage these
-    resource containers.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Generic-GCP.png
-  humanURL: https://cloud.google.com/resource-manager/
-  baseURL: ://cloudresourcemanager.googleapis.com//
-  tags: Google Cloud Resource Manager
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-cloud-resource-manager/master/_listings/google-cloud-resource-manager/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://google.cloud.pub.sub.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://google.cloud.resource.manager.stack.network
 - type: x-authentication
   url: https://cloud.google.com/resource-manager/docs/authorizing
 - type: x-code
